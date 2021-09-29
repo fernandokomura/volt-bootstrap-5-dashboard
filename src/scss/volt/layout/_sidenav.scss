@@ -26,7 +26,9 @@
 		&.active {
 			& > .nav-link {
 				color: $gray-100;
-				background-color: $gray-700;
+				background-color: $white;
+				border-style: solid;
+				border-color: $gray-400;
 			}
 		}
 		.nav-link {
@@ -34,7 +36,7 @@
 			cursor: pointer;
 			&:hover {
 				color: $gray-100;
-				background-color: $gray-700;
+				background-color: $white;
 			}
 		}
 		margin-bottom: .2rem;
@@ -52,11 +54,12 @@
 
 		.sidebar-icon {
 			margin-right: .5rem;
-			color: $gray-400;
+			color: $gray-800;
 		}
 
 		.link-arrow{
 			font-size: $font-size-sm;
+			color: $gray-800;
 		}
 
 		&[data-bs-toggle=collapse][aria-expanded=true] .link-arrow{
@@ -79,6 +82,10 @@
 	.badge,
 	.notification-count {
 		opacity: 1;
+	}
+
+	.sidebar-text {
+		color: $gray-800 ;
 	}
 
 	.sidebar-text-contracted {
